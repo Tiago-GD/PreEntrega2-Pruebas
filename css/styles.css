@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------Header------ */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 10.3125rem;
+    height: 10.3125rem;
+    margin-left: 1.25rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-item, .nav-item-active {
+    display: flex;
+    text-decoration: none;
+    color: #525252;
+    font-family: "Antonio", sans-serif;
+    margin: 1.875rem;
+    font-size: 1.5625rem;
+}
+
+.nav-item-active {
+    color: #000000;
+}
+
+.button-delivery a, .button-delivery-active a {
+    text-decoration: none;
+    color: white;
+    font-family: "Antonio", sans-serif;
+    padding: .625rem 2.5rem;
+    background-color: #A10000;
+    border-radius: 1.875rem;
+    margin: 2.5rem 1.875rem 0 1.875rem;
+    font-size: 1.5625rem;
+
+}
+
+.button-delivery-active a {
+    color: black;
+}
+
+.insta-navbar {
+    width: 4.375rem;
+    height: 3.9375rem;
+    margin: 1.875rem;
+}
+
+
+/* ------Main Inicio------ */
+body::before {
+    content: "";
+    display: block;
+    height: 10.5625rem;
+}
+
+main{
+    background-color: #FFEBDD;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hero{
+    background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat ;
+    background-position: center;
+    width: 100%;
+    height: 41.25rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template: repeat(5, 3fr) /repeat(3, 3fr) ;
+    row-gap: .625rem;
+}
+
+.hero h1{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .625rem;
+    grid-row-start:2 ;
+    grid-row-end:3 ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 3.125rem;
+
+}
+
+.hero p{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .625rem;
+    grid-row-start:3 ;
+    grid-row-end:4 ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 1.5625rem;
+}
+
+.hero a{
+    text-decoration: none;
+    color: white;
+    font-family: "Antonio", sans-serif;
+    padding: .625rem 2.5rem .625rem 2.5rem;
+    background-color: #A10000;
+    border-radius: 1.875rem;
+    display: inline-block;
+    grid-row-start:4 ;
+    grid-row-end:5 ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.25rem;
+}
+
+.about{
+    width: 100%;
+    height: 9.375rem;
+    
+}
+
+.about h2{
+    color: black;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.875rem;
+    text-align: center;
+    margin: .625rem; 
+}
+
+.about p{
+    color: #525252;
+    font-family: "Abel", sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+.community{
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.community h2{
+    color: black;
+    font-family: "Abel", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2.5rem; 
+    text-align: center;
+
+}
+
+.community img{
+    width: 5rem;
+    height: 5rem;
+    margin: 1.875rem;
+    align-self: center;
+}
+
+.service{
+    display: grid;
+    width: 100%;
+    height: 45vh;
+    grid-template: repeat(2, 1fr) /repeat(5, 1fr) ;
+    column-gap: 3.125rem;
+}
+
+.service h3{
+    color: black;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size:1.875rem;
+    text-align: center;
+    margin: 5px 0 1.25rem 0;
+}
+
+.service p{
+    color: #525252;
+    font-family: "Abel", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.service img {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: .625rem;
+    border-radius: 1.875rem;
+}
+
+.pizzeria, .restaurante, .cafeteria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizzeria {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.restaurante {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.cafeteria {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+} 
+
+.bt-main-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15.625rem;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3.125rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.bt-main-menu a{
+    text-decoration: none;
+    color: black;
+    font-family: "Antonio", sans-serif;
+    font-size: 1.25rem;
+    padding: .625rem 2.5rem .625rem 2.5rem;
+    background-color: #FFEBDD;
+    border-radius: 1.875rem;
+    border:  .3125rem solid #A10000;
+
+}
+
+/* ------Footer------ */
+footer{
+    background-color:#A75151 ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.footer-main p, .footer-hours p, .footer-contact p{
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-style: normal;
+    margin: 30px auto;
+}
+
+.footer-main a, .footer-contact a{
+    text-decoration: none;
+    color: white;
+    font-family: "Antonio", sans-serif;
+    padding: .625rem 2.5rem .625rem 2.5rem;
+    background-color: #A10000;
+    border-radius: 1.875rem;
+    font-size: 1.25rem;
+    margin: 2.5rem 1.875rem 3.125rem 1.875rem;
+    display: inline-block;
+}
+
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.footer-hours{
+    margin: 75px auto;
+    text-align: center;
+}
+
+.footer-contact{
+    margin: 75px auto;
+    text-align: center;
+}
+
+.footer-social{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+
+.footer-logo img{ 
+    width: 10.3125rem;
+    height: 10.3125rem;    
+}
+
+.footer-hours h2, .footer-contact h2{
+    color: white;
+    font-family: "Arbutus Slab", ;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: .625rem;
+    margin-bottom: 1.25rem;  
+}
+
+.footer-social img{
+    width: 4.375rem;
+    height: 3.75rem;
+    margin: 1.875rem;
+    display: inline-block;
+}
+
+/* ------Main Conocenos------ */
+
+
+.hero-cono{
+    background-image: url(https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat ;
+    background-position: center;
+    width: 100%;
+    height: 25.625rem;
+    margin-bottom: 3.125rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.hero-cono h1{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .625rem;
+}
+
+.cono-info{
+    background-color: #FFEBDD ;
+    width: 100%;
+    height: 109.375rem;
+}
+
+.cono-info h3{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: .625rem; 
+    margin-bottom: 1.25rem;
+}
+
+.cono-info-hist {
+    background-image: url("https://images.unsplash.com/photo-1569230516306-5a8cb5586399?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; 
+    background-position: center; 
+    width: 25rem;
+    height: 18.75rem;
+    margin: .625rem;
+    border-radius: 1.875rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.cono-info-valo {
+    background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; 
+    background-position: center; 
+    width: 25rem;
+    height: 18.75rem;
+    margin: .625rem;
+    border-radius: 1.875rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.cono-info-expe {
+    background-image: url("https://images.unsplash.com/photo-1572552635104-daf938e0aa1f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; 
+    background-position: center; 
+    width: 25rem;
+    height: 18.75rem;
+    margin: .625rem;
+    border-radius: 1.875rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.cono-info-prem {
+    background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; 
+    background-position: center; 
+    width: 25rem;
+    height: 18.75rem;
+    margin: .625rem;
+    border-radius: 1.875rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+
+.cono-info p{
+    color: #525252;
+    font-family: "Abel", sans-serif;
+    margin-left: .625rem;
+    margin-bottom: 6.25rem;
+}
+
+/* ------Main Delivery------ */
+
+.hero-deli{
+    background-image: url(https://images.unsplash.com/photo-1526367790999-0150786686a2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat ;
+    background-position: center;
+    width: 100%;
+    height: 25.625rem;
+    margin-bottom: 5rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.hero-deli h1{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .625rem;
+}
+
+.pedidos h2{
+    color: black;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: .625rem; 
+}
+
+.pedidos p{
+    color: #525252;
+    font-family: "Abel", sans-serif;
+    margin-left: .625rem; 
+    margin-top: .9375rem;
+}
+
+.bt-main-deli a{
+    text-decoration: none;
+    color: white;
+    font-family: "Antonio", sans-serif;
+    padding: .625rem 2.5rem .625rem 2.5rem;
+    background-color: #A10000;
+    border-radius: 1.875rem;
+    margin: 5rem 1.875rem 5rem 1.875rem; 
+    display: inline-block;
+}
+
+/* ------Main Contacto------ */
+.hero-cont{
+    background-image: url(https://images.unsplash.com/photo-1606455036891-15e4be71eef0?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat ;
+    background-position: center;
+    width: 100%;
+    height: 25.625rem;
+    margin-bottom: 4.6875rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.hero-cont h1{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .625rem;
+}
+
+.hablemos h2{
+    color: black;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: .625rem; 
+}
+
+.hablemos p{
+    color: #525252;
+    font-family: "Abel", sans-serif;
+    margin-left: .625rem; 
+    margin-top: .9375rem;
+}
+
+.contactos{
+    background-color: #FFEBDD ;
+    width: 100%;
+    height: 75rem;
+}
+
+.contactos h3{
+    color: black;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0 1.25rem .625rem;
+}
+
+.contactos p{
+    color: #525252;
+    font-family: "Abel", sans-serif;
+    margin-left: .625rem; 
+}
+
+.contactos img{
+    width: 130px;
+    height: 130px;
+    margin: 4.6875rem 0 .3125rem 1.875rem ;
+    border-radius: 1.875rem;
+}
+
+/* ------Main Menu------ */
+
+.hero-menu{
+    background-image: url(https://images.unsplash.com/photo-1589187151053-5ec8818e661b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat ;
+    background-position: center;
+    width: 100%;
+    height: 25.625rem;
+    margin-bottom: 4.375rem ;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
+}
+
+.hero-menu h1{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .625rem;  
+}
+
+.menu{
+    background-color: #FFEBDD ;
+    width: 100%;
+    height: 50rem;
+}
+
+.menu h2{
+    color: white;
+    font-family: "Arbutus Slab", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: 10.9375rem; 
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: #A75151;
+    border-radius: 1.875rem 1.875rem 0 0;
+}
+
+.menu-lista{
+    background-color: #A75151;
+    border-radius: 0 1.875rem 1.875rem 1.875rem;
+    color: white;
+    font-family: "Abel", sans-serif;
+    margin-left: 10.9375rem; 
+    margin-bottom: 4.6875rem;
+    width: 80%;
+    height: 100%;
+}
+
+.pizzas-menu p{
+    margin: 0 2.5rem 0 2.5rem;
+}
+
+
+
