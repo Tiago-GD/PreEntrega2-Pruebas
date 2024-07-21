@@ -28,6 +28,10 @@ header {
     margin-left: 1.25rem;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -688,7 +692,143 @@ footer{
         width: 8.75rem;
         height: 8.75rem;    
     }
-    
-    
 }
 
+@media(max-width:320px){
+    body::before {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template: repeat(2, 1fr) /repeat(2, 1fr) ;
+    }
+
+    .insta-navbar{
+        display: none;
+    }
+    
+    .logo-container{
+        display: grid;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-items: center;
+    }
+
+    .logo {
+        width: 8.75rem;
+        height: 8.75rem;
+        margin: 0;
+    }
+
+    .button-delivery a, .button-delivery-active a {
+        margin: 0;
+        padding: .625rem 2rem;
+    }
+    
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+    
+    .menu-icon .hamburger,
+    .menu-icon .hamburger::before,
+    .menu-icon .hamburger::after {
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: #000000;
+        border-radius: 3px;
+    }
+    
+    .menu-icon .hamburger::before,
+    .menu-icon .hamburger::after {
+        position: absolute;
+        width: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .menu-icon .hamburger::before {
+        transform: translateY(-9px);
+    }
+    
+    .menu-icon .hamburger::after {
+        transform: translateY(9px);
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-start:2 ;
+        grid-row-end:3 ;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border: 2px solid #A10000;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        z-index: 10;
+    }
+    
+    .nav-list ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-list li {
+        margin: 10px 0;
+    }
+    
+    .nav-item, .nav-item-active {
+        color: #A10000;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-item-active {
+        color: #000000;
+    }
+    
+    .menu-toggle:checked ~ .navbar .nav-list {
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    main{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+}
