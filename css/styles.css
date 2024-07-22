@@ -277,7 +277,7 @@ main{
     height: 15.625rem;
     justify-content: center;
     align-content: center;
-    margin-bottom: 3.125rem;
+    /* margin-bottom: 3.125rem; */
     display: inline-block;
     text-align: center;
 }
@@ -692,11 +692,15 @@ footer{
         width: 8.75rem;
         height: 8.75rem;    
     }
+
+    .footer-main p, .footer-hours p, .footer-contact p{
+        margin: 30px 20px 30px 20px;
+    }
 }
 
 @media(max-width:320px){
     body::before {
-        display: none;
+        height: 17.5rem;
     }
 
     header {
@@ -810,25 +814,63 @@ footer{
         display: flex;
     }
 
+    /* Main Inicio */
 
-
-
-
-
-
-
-
-
-
-
-
+    .hero{
+        height: 450px;
+    }
     
-    main{
-        display: none;
+    .hero h1{
+        font-size: 40px;
+        text-align: center;
     }
 
+    .hero p{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .hero a{
+        grid-row-end:6 ;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+
+    .about h2{
+        margin: 1.125rem; 
+    }
+
+    .about p{
+        margin: 1.25rem;
+    }
+
+    .community{
+        margin-top: 160px;
+    }
+    
+    .service p{
+        font-size: 1.375rem;
+        margin: .9375rem 18% 6rem 18%;
+    }
+    
+    .service img {
+        width: 15.3125rem;
+        height: 15.3125rem;
+    }
+
+    .bt-main-menu{
+        height: 50vh;
+    }
+
+/* Footer */
     footer{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 
+    .footer-main p, .footer-hours p, .footer-contact p{
+        margin: 30px 18px 30px 18px;
+    }
 }
