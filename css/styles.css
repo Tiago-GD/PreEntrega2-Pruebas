@@ -193,7 +193,8 @@ main{
 .about p{
     color: #525252;
     font-family: "Abel", sans-serif;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
+    font-size: 1.4375rem;
     font-weight: normal;
     font-style: normal;
     text-align: center;
@@ -247,7 +248,7 @@ main{
     font-weight: normal;
     font-style: normal;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1.4375rem;
 }
 
 .service img {
@@ -409,27 +410,48 @@ footer{
     font-size: 3.125rem;
 }
 
-.cono-info{
-    background-color: #FFEBDD ;
+.cono-info {
+    background-color: #FFEBDD;
     width: 100%;
-    height: 100%;
-    margin: 1.25rem 12.5rem 6.25rem 12.5rem;
+    padding: 2rem 11rem; 
 }
 
-.cono-info-hist, .cono-info-valo, .cono-info-expe, .cono-info-prem{
+.div-info {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.div-info-a {
+    flex-direction: row; 
+}
+
+.div-info-b {
+    flex-direction: row-reverse; 
+}
+
+.image-container {
+    flex: 0 0 25rem; 
+    height: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-container h3 {
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-family: "Arbutus Slab", sans-serif;
     font-weight: normal;
     font-style: normal;
-    background-size: cover; 
-    background-position: center; 
-    width: 25rem;
-    height: 18.75rem;
-    border-radius: 1.875rem;
+    width: 100%;
+    height: 100%;
     background-blend-mode: multiply;
     background-color: rgba(84, 40, 40, 0.5);
 }
@@ -450,30 +472,24 @@ footer{
     background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.cono-info p{
+.cono-info p {
     color: #525252;
     font-family: "Abel", sans-serif;
     font-weight: normal;
     font-style: normal;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
+    line-height: 3.125rem;
+    flex: 1; 
 }
 
-
-/* Acomodar las fotos  texto de esta manera ----------------------- */
-
-/* .div-info-a{
-    display: flex;
-    flex-direction: row;
+.div-info-a p{
+    margin-left: 15.625rem;
 }
 
-.div-info-b{
-    display: flex;
-    flex-direction: row-reverse;
-} */
-
-
-
+.div-info-b p{
+    margin-right: 15.625rem;
+}
 
 /* ------Main Delivery------ */
 
@@ -636,6 +652,12 @@ footer{
 
 .pizzas-menu p{
     margin: 0 2.5rem 0 2.5rem;
+}
+
+@media(max-width:1440px){
+    .service p{
+        font-size: 1.375rem;
+    }
 }
 
 @media(max-width:1024px){
