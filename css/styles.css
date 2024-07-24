@@ -18,6 +18,22 @@ header {
     z-index: 1000;
 }
 
+.navbar-2{
+    display: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0, 0, 0, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+    width: 2rem; 
+    height: 2rem; 
+    background-size: contain;
+}
+
+.navbar-toggler {
+    padding: 0.5rem; /* Ajusta el padding aquí si es necesario */
+}
+
+
 .logo-container {
     flex: 1;
 }
@@ -124,7 +140,6 @@ main{
     align-self: flex-end;
     justify-self: center;
     font-size: 3.125rem;
-
 }
 
 .hero p{
@@ -245,7 +260,6 @@ main{
 .pizzeria, .restaurante, .cafeteria {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -355,7 +369,7 @@ footer{
 
 .footer-hours h2, .footer-contact h2{
     color: white;
-    font-family: "Arbutus Slab", ;
+    font-family: "Arbutus Slab", sans-serif ;
     font-weight: normal;
     font-style: normal;
     margin-left: .625rem;
@@ -378,9 +392,12 @@ footer{
     background-position: center;
     width: 100%;
     height: 25.625rem;
-    margin-bottom: 3.125rem;
     background-blend-mode: multiply;
     background-color: rgba(84, 40, 40, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-cono h1{
@@ -389,78 +406,74 @@ footer{
     font-weight: normal;
     font-style: normal;
     margin: .625rem;
+    font-size: 3.125rem;
 }
 
 .cono-info{
     background-color: #FFEBDD ;
     width: 100%;
-    height: 109.375rem;
+    height: 100%;
+    margin: 1.25rem 12.5rem 6.25rem 12.5rem;
 }
 
-.cono-info h3{
+.cono-info-hist, .cono-info-valo, .cono-info-expe, .cono-info-prem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: "Arbutus Slab", sans-serif;
     font-weight: normal;
     font-style: normal;
-    margin-left: .625rem; 
-    margin-bottom: 1.25rem;
+    background-size: cover; 
+    background-position: center; 
+    width: 25rem;
+    height: 18.75rem;
+    border-radius: 1.875rem;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 40, 40, 0.5);
 }
 
 .cono-info-hist {
     background-image: url("https://images.unsplash.com/photo-1569230516306-5a8cb5586399?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover; 
-    background-position: center; 
-    width: 25rem;
-    height: 18.75rem;
-    margin: .625rem;
-    border-radius: 1.875rem;
-    background-blend-mode: multiply;
-    background-color: rgba(84, 40, 40, 0.5);
 }
 
 .cono-info-valo {
     background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover; 
-    background-position: center; 
-    width: 25rem;
-    height: 18.75rem;
-    margin: .625rem;
-    border-radius: 1.875rem;
-    background-blend-mode: multiply;
-    background-color: rgba(84, 40, 40, 0.5);
 }
 
 .cono-info-expe {
     background-image: url("https://images.unsplash.com/photo-1572552635104-daf938e0aa1f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover; 
-    background-position: center; 
-    width: 25rem;
-    height: 18.75rem;
-    margin: .625rem;
-    border-radius: 1.875rem;
-    background-blend-mode: multiply;
-    background-color: rgba(84, 40, 40, 0.5);
 }
 
 .cono-info-prem {
     background-image: url("https://plus.unsplash.com/premium_photo-1679591002618-bc0b4de816cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover; 
-    background-position: center; 
-    width: 25rem;
-    height: 18.75rem;
-    margin: .625rem;
-    border-radius: 1.875rem;
-    background-blend-mode: multiply;
-    background-color: rgba(84, 40, 40, 0.5);
 }
-
 
 .cono-info p{
     color: #525252;
     font-family: "Abel", sans-serif;
-    margin-left: .625rem;
-    margin-bottom: 6.25rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.25rem;
 }
+
+
+/* Acomodar las fotos  texto de esta manera ----------------------- */
+
+/* .div-info-a{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-info-b{
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+
+
 
 /* ------Main Delivery------ */
 
@@ -625,6 +638,23 @@ footer{
     margin: 0 2.5rem 0 2.5rem;
 }
 
+@media(max-width:1024px){
+
+/* Header */
+    .logo-container{
+        flex: 0;
+    }
+
+    .nav-list{
+        flex: 0;
+    }
+
+    .insta-navbar{
+        margin: 15px;
+    }
+}
+
+
 @media(max-width:768px){
     
 /* Header */
@@ -698,7 +728,9 @@ footer{
     }
 }
 
-@media(max-width:320px){
+@media(max-width:425px){
+
+/* Header */
     body::before {
         height: 17.5rem;
     }
@@ -708,10 +740,6 @@ footer{
         grid-template: repeat(2, 1fr) /repeat(2, 1fr) ;
     }
 
-    .insta-navbar{
-        display: none;
-    }
-    
     .logo-container{
         display: grid;
         grid-row-start:1 ;
@@ -727,77 +755,35 @@ footer{
         margin: 0;
     }
 
+    .insta-navbar{
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+    
+
     .button-delivery a, .button-delivery-active a {
         margin: 0;
         padding: .625rem 2rem;
     }
     
-    .menu-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 30px;
-        height: 25px;
-        cursor: pointer;
-    }
-    
-    .menu-icon .hamburger,
-    .menu-icon .hamburger::before,
-    .menu-icon .hamburger::after {
-        content: "";
-        display: block;
-        height: 3px;
-        background-color: #000000;
-        border-radius: 3px;
-    }
-    
-    .menu-icon .hamburger::before,
-    .menu-icon .hamburger::after {
-        position: absolute;
-        width: 30px;
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .menu-icon .hamburger::before {
-        transform: translateY(-9px);
-    }
-    
-    .menu-icon .hamburger::after {
-        transform: translateY(9px);
-    }
-    
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .navbar{
         grid-row-start:2 ;
         grid-row-end:3 ;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    
-    .nav-list {
-        display: none;
+
+    .navbar-2{
+        display: flex;
         flex-direction: column;
-        background-color: #FFFFFF;
-        border: 2px solid #A10000;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        z-index: 10;
-    }
-    
-    .nav-list ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .nav-list li {
-        margin: 10px 0;
+        align-items: center;
+        grid-row-start:2 ;
+        grid-row-end:3 ;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
     
     .nav-item, .nav-item-active {
@@ -808,10 +794,6 @@ footer{
 
     .nav-item-active {
         color: #000000;
-    }
-    
-    .menu-toggle:checked ~ .navbar .nav-list {
-        display: flex;
     }
 
     /* Main Inicio */
