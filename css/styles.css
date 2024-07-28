@@ -624,7 +624,6 @@ footer{
     background-position: center;
     width: 100%;
     height: 25.625rem;
-    margin-bottom: 4.375rem ;
     background-blend-mode: multiply;
     background-size: cover;
     background-color: rgba(138, 67, 67, 0.5);
@@ -635,13 +634,32 @@ footer{
     font-family: "Arbutus Slab", sans-serif;
     font-weight: normal;
     font-style: normal;
-    margin: .625rem;  
+    margin: .625rem; 
+    font-size: 3.125rem; 
+}
+
+.pizza, .entradas, .pasta{
+    width: 60%;
+    height: 100%;
+}
+
+.pizza-menu, .entradas-menu, .pasta-menu{
+    background-color: #A75151;
+    border-radius: 0 30px 30px 30px;
+}
+
+.menu-lista{
+    background-color: #A75151;
+    color: white;
+    margin: 0 7% 0 7%;
+    font-family: "Abel", sans-serif;
+    font-size: 1.25rem;
+    line-height: 40px;
 }
 
 .menu{
-    background-color: #FFEBDD ;
-    width: 100%;
-    height: 50rem;
+    gap: 70px;
+    margin: 5% 0 5% 0;
 }
 
 .menu h2{
@@ -649,27 +667,33 @@ footer{
     font-family: "Arbutus Slab", sans-serif;
     font-weight: normal;
     font-style: normal;
-    margin-left: 10.9375rem; 
-    width: 9.375rem;
-    height: 3.125rem;
     background-color: #A75151;
-    border-radius: 1.875rem 1.875rem 0 0;
+    padding: 20px 40px 0px 40px;
+    display: inline;
+    border-radius: 30px 30px 0 0 ;
 }
 
-.menu-lista{
-    background-color: #A75151;
-    border-radius: 0 1.875rem 1.875rem 1.875rem;
-    color: white;
-    font-family: "Abel", sans-serif;
-    margin-left: 10.9375rem; 
-    margin-bottom: 4.6875rem;
-    width: 80%;
-    height: 100%;
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-.pizzas-menu p{
-    margin: 0 2.5rem 0 2.5rem;
+.search-container input[type="text"] {
+    width: 80%; 
+    padding: 10px;
+    border: 3px solid #A75151; 
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    outline: none;
 }
+
+.search-container input[type="text"]::placeholder {
+    color: #A75151; 
+}
+
 
 @media(max-width:1440px){
     .service p{
